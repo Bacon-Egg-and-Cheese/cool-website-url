@@ -5,8 +5,11 @@
       html, body {
         overflow-x: hidden;
         overflow-y: hidden;
-        max-width: 100%;
+        margin: 0;
+        min-height: 100%;
         background-image: linear-gradient(150deg, #ffffff 0%, #ffffff 55%, #f6d365 90%, #fda085 100%);
+        background-repeat: no-repeat;
+        background-size: contain;
       }
       .container {
         padding-top: 5vh;
@@ -34,7 +37,7 @@
       }
       .upper-right {
         position: absolute;
-        transform: translate(85vw, 0vh) rotate(70deg);
+        transform: translate(60vw, 0vh) rotate(70deg);
       }
       .middle-middle {
         position: absolute;
@@ -46,7 +49,7 @@
       }
       .middle-right {
         position: absolute;
-        transform: translate(65vw, 65vh) rotate(170deg);
+        transform: translate(60vw, 60vh) rotate(170deg);
       }
       p {
         font-size: 200%;
