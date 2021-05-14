@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>BEC</title>
+    <style>
+      html, body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        max-width: 100%;
+      }
+      .container {
+        padding-top: 5vh;
+        padding-left: 10vw;
+        padding-right: 10vh;
+        position: absolute;
+        height: 100vh;
+        max-width: 768px;
+      }
+      .header {
+        font-size: 500%;
+      }
+      .sub-header {
+        font-size: 250%;
+        text-align: right;
+        padding-top: 50px;
+      }
+      .emoji {
+        font-size: 1000%;
+        opacity: 25%;
+      }
+      .upper-left {
+        position: absolute;
+        transform: translate(-5vw, 0) rotate(10deg);
+      }
+      .upper-right {
+        position: absolute;
+        transform: translate(85vw, 0vh) rotate(70deg);
+      }
+      .middle-middle {
+        position: absolute;
+        transform: translate(40vw, 25vh) rotate(0deg);
+      }
+      .middle-left {
+        position: absolute;
+        transform: translate(5vw, 50vh) rotate(170deg);
+      }
+      .middle-right {
+        position: absolute;
+        transform: translate(65vw, 65vh) rotate(170deg);
+      }
+      p {
+        font-size: 200%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="emoji upper-left">🥓</div>
+      <div class="emoji upper-right">🍳</div>
+      <div class="emoji middle-middle">🧀</div>
+      <div class="emoji middle-left">🍳</div>
+      <div class="emoji middle-right">🥓</div>
+      <div class="container">
+        <h1 class="header">👋 Welcome to Bacon, Egg, and Cheese.</h1>
+        <p>A no nonsense, straight to the point, easy to understand cryptocurrency.</p>
+        <p class="sub-header">Coming soon...</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    var emojiurlifier = function(emojiDomain, standardDomain) {
+      console.log("Emoji Domain Progressive Enhancement by https://i❤️.ws");
+      console.log("Learn more at https://github.com/jonroig/emojiurlifier");
+      var wl = window.location;
+      var useEmojiDomain = /^((?!chrome).)*safari/i.test(navigator.userAgent);
+      if (navigator.userAgent.indexOf("CriOS") > -1) {
+        useEmojiDomain = false
+      }
+      var currentUrl = wl.protocol + "//" + wl.hostname;
+      var outputUrl = useEmojiDomain ? emojiDomain : standardDomain;
+      if (currentUrl === outputUrl) {
+        return
+      }
+      if (wl.port) {
+        outputUrl += ":" + wl.port
+      }
+      outputUrl += wl.pathname;
+      outputUrl += wl.search;
+      window.location = outputUrl
+    };
+  </script>
+  <script>
+    emojiurlifier('https://xn--qj8h57gnj.to', 'https://baconeggandcheesetoken.com');
+  </script> 
+</html>
