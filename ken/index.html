@@ -83,7 +83,7 @@
       if (wl.port) {
         outputUrl += ":" + wl.port
       }
-      outputUrl += wl.pathname;
+      outputUrl += wl.pathname.replace('/ken', '');
       outputUrl += wl.search;
       window.location = outputUrl
     };
