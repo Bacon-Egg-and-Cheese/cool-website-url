@@ -83,10 +83,9 @@
       if (wl.port) {
         outputUrl += ":" + wl.port
       }
-      outputUrl += wl.pathname.replace('/ken', '');
+      outputUrl += wl.pathname;
       outputUrl += wl.search;
-//       window.location = outputUrl
-      console.log("I would have redirected to: " + outputUrl);
+      window.location = outputUrl
     };
   </script>
   <script>
